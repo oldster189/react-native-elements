@@ -186,6 +186,7 @@ const styles = StyleSheet.create({
   },
   input: {
     marginLeft: 6,
+    fontSize: 15,
   },
   inputContainer: {
     borderBottomWidth: 0,
