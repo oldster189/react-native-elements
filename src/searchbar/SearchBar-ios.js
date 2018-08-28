@@ -9,6 +9,7 @@ import {
   View,
   ActivityIndicator,
   Text,
+  TouchableOpacity
 } from 'react-native';
 
 import ViewPropTypes from '../config/ViewPropTypes';
@@ -134,11 +135,18 @@ class SearchBar extends Component {
             rightIconContainerStyle,
           ]}
         />
-        <Button
-          title={cancelButtonTitle}
-          onPress={this.cancel}
-          {...cancelButtonProps}
-        />
+        <TouchableOpacity
+          style={{ justifyContent: 'center' }}
+          onPress={this.cancel} 
+        >
+          <Text
+            style={{
+              color: 'white',
+              fontSize: 16,
+              marginLeft: 8
+            }}
+          >{cancelButtonTitle}</Text>
+        </TouchableOpacity>
       </View>
     );
   }
