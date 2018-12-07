@@ -44,6 +44,9 @@ class SearchBar extends Component {
   cancel = () => {
     this.blur();
     this.props.onCancel();
+    
+    // Fix กด Cancel แล้ว onBlur ไม่ถูกเรียกขณะ Focus input แล้ว Alert เด้ง
+    this.setState({ hasFocus: false });
   };
 
   onFocus = () => {
