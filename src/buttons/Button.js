@@ -210,7 +210,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
       },
       android: {
-        fontWeight: '500',
+        fontFamily: 'Roboto-Bold',
       },
     }),
   },
